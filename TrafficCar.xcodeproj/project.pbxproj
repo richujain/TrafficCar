@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09904FB4249BFC9700292EC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09904FB3249BFC9700292EC8 /* AppDelegate.swift */; };
+		09904FB6249BFC9700292EC8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 09904FB5249BFC9700292EC8 /* GameScene.sks */; };
+		09904FB8249BFC9700292EC8 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 09904FB7249BFC9700292EC8 /* Actions.sks */; };
+		09904FBA249BFC9700292EC8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09904FB9249BFC9700292EC8 /* GameScene.swift */; };
+		09904FBC249BFC9700292EC8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09904FBB249BFC9700292EC8 /* GameViewController.swift */; };
+		09904FBF249BFC9700292EC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09904FBD249BFC9700292EC8 /* Main.storyboard */; };
+		09904FC1249BFC9A00292EC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09904FC0249BFC9A00292EC8 /* Assets.xcassets */; };
+		09904FC4249BFC9A00292EC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09904FC2249BFC9A00292EC8 /* LaunchScreen.storyboard */; };
+		09904FCF249BFC9A00292EC8 /* TrafficCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09904FCE249BFC9A00292EC8 /* TrafficCarTests.swift */; };
+		09904FDA249BFC9A00292EC8 /* TrafficCarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09904FD9249BFC9A00292EC8 /* TrafficCarUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09904FCB249BFC9A00292EC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09904FA8249BFC9700292EC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09904FAF249BFC9700292EC8;
+			remoteInfo = TrafficCar;
+		};
+		09904FD6249BFC9A00292EC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09904FA8249BFC9700292EC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09904FAF249BFC9700292EC8;
+			remoteInfo = TrafficCar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09904FB0249BFC9700292EC8 /* TrafficCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09904FB3249BFC9700292EC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09904FB5249BFC9700292EC8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		09904FB7249BFC9700292EC8 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		09904FB9249BFC9700292EC8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		09904FBB249BFC9700292EC8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		09904FBE249BFC9700292EC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09904FC0249BFC9A00292EC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09904FC3249BFC9A00292EC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09904FC5249BFC9A00292EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09904FCA249BFC9A00292EC8 /* TrafficCarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrafficCarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09904FCE249BFC9A00292EC8 /* TrafficCarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficCarTests.swift; sourceTree = "<group>"; };
+		09904FD0249BFC9A00292EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09904FD5249BFC9A00292EC8 /* TrafficCarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrafficCarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09904FD9249BFC9A00292EC8 /* TrafficCarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficCarUITests.swift; sourceTree = "<group>"; };
+		09904FDB249BFC9A00292EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09904FAD249BFC9700292EC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09904FC7249BFC9A00292EC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09904FD2249BFC9A00292EC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09904FA7249BFC9700292EC8 = {
+			isa = PBXGroup;
+			children = (
+				09904FB2249BFC9700292EC8 /* TrafficCar */,
+				09904FCD249BFC9A00292EC8 /* TrafficCarTests */,
+				09904FD8249BFC9A00292EC8 /* TrafficCarUITests */,
+				09904FB1249BFC9700292EC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09904FB1249BFC9700292EC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09904FB0249BFC9700292EC8 /* TrafficCar.app */,
+				09904FCA249BFC9A00292EC8 /* TrafficCarTests.xctest */,
+				09904FD5249BFC9A00292EC8 /* TrafficCarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09904FB2249BFC9700292EC8 /* TrafficCar */ = {
+			isa = PBXGroup;
+			children = (
+				09904FB3249BFC9700292EC8 /* AppDelegate.swift */,
+				09904FB5249BFC9700292EC8 /* GameScene.sks */,
+				09904FB7249BFC9700292EC8 /* Actions.sks */,
+				09904FB9249BFC9700292EC8 /* GameScene.swift */,
+				09904FBB249BFC9700292EC8 /* GameViewController.swift */,
+				09904FBD249BFC9700292EC8 /* Main.storyboard */,
+				09904FC0249BFC9A00292EC8 /* Assets.xcassets */,
+				09904FC2249BFC9A00292EC8 /* LaunchScreen.storyboard */,
+				09904FC5249BFC9A00292EC8 /* Info.plist */,
+			);
+			path = TrafficCar;
+			sourceTree = "<group>";
+		};
+		09904FCD249BFC9A00292EC8 /* TrafficCarTests */ = {
+			isa = PBXGroup;
+			children = (
+				09904FCE249BFC9A00292EC8 /* TrafficCarTests.swift */,
+				09904FD0249BFC9A00292EC8 /* Info.plist */,
+			);
+			path = TrafficCarTests;
+			sourceTree = "<group>";
+		};
+		09904FD8249BFC9A00292EC8 /* TrafficCarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				09904FD9249BFC9A00292EC8 /* TrafficCarUITests.swift */,
+				09904FDB249BFC9A00292EC8 /* Info.plist */,
+			);
+			path = TrafficCarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09904FAF249BFC9700292EC8 /* TrafficCar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09904FDE249BFC9A00292EC8 /* Build configuration list for PBXNativeTarget "TrafficCar" */;
+			buildPhases = (
+				09904FAC249BFC9700292EC8 /* Sources */,
+				09904FAD249BFC9700292EC8 /* Frameworks */,
+				09904FAE249BFC9700292EC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrafficCar;
+			productName = TrafficCar;
+			productReference = 09904FB0249BFC9700292EC8 /* TrafficCar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09904FC9249BFC9A00292EC8 /* TrafficCarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09904FE1249BFC9A00292EC8 /* Build configuration list for PBXNativeTarget "TrafficCarTests" */;
+			buildPhases = (
+				09904FC6249BFC9A00292EC8 /* Sources */,
+				09904FC7249BFC9A00292EC8 /* Frameworks */,
+				09904FC8249BFC9A00292EC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09904FCC249BFC9A00292EC8 /* PBXTargetDependency */,
+			);
+			name = TrafficCarTests;
+			productName = TrafficCarTests;
+			productReference = 09904FCA249BFC9A00292EC8 /* TrafficCarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		09904FD4249BFC9A00292EC8 /* TrafficCarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09904FE4249BFC9A00292EC8 /* Build configuration list for PBXNativeTarget "TrafficCarUITests" */;
+			buildPhases = (
+				09904FD1249BFC9A00292EC8 /* Sources */,
+				09904FD2249BFC9A00292EC8 /* Frameworks */,
+				09904FD3249BFC9A00292EC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09904FD7249BFC9A00292EC8 /* PBXTargetDependency */,
+			);
+			name = TrafficCarUITests;
+			productName = TrafficCarUITests;
+			productReference = 09904FD5249BFC9A00292EC8 /* TrafficCarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09904FA8249BFC9700292EC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				TargetAttributes = {
+					09904FAF249BFC9700292EC8 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					09904FC9249BFC9A00292EC8 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 09904FAF249BFC9700292EC8;
+					};
+					09904FD4249BFC9A00292EC8 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 09904FAF249BFC9700292EC8;
+					};
+				};
+			};
+			buildConfigurationList = 09904FAB249BFC9700292EC8 /* Build configuration list for PBXProject "TrafficCar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09904FA7249BFC9700292EC8;
+			productRefGroup = 09904FB1249BFC9700292EC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09904FAF249BFC9700292EC8 /* TrafficCar */,
+				09904FC9249BFC9A00292EC8 /* TrafficCarTests */,
+				09904FD4249BFC9A00292EC8 /* TrafficCarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09904FAE249BFC9700292EC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09904FBF249BFC9700292EC8 /* Main.storyboard in Resources */,
+				09904FB6249BFC9700292EC8 /* GameScene.sks in Resources */,
+				09904FC1249BFC9A00292EC8 /* Assets.xcassets in Resources */,
+				09904FC4249BFC9A00292EC8 /* LaunchScreen.storyboard in Resources */,
+				09904FB8249BFC9700292EC8 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09904FC8249BFC9A00292EC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09904FD3249BFC9A00292EC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09904FAC249BFC9700292EC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09904FBA249BFC9700292EC8 /* GameScene.swift in Sources */,
+				09904FBC249BFC9700292EC8 /* GameViewController.swift in Sources */,
+				09904FB4249BFC9700292EC8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09904FC6249BFC9A00292EC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09904FCF249BFC9A00292EC8 /* TrafficCarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09904FD1249BFC9A00292EC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09904FDA249BFC9A00292EC8 /* TrafficCarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09904FCC249BFC9A00292EC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09904FAF249BFC9700292EC8 /* TrafficCar */;
+			targetProxy = 09904FCB249BFC9A00292EC8 /* PBXContainerItemProxy */;
+		};
+		09904FD7249BFC9A00292EC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09904FAF249BFC9700292EC8 /* TrafficCar */;
+			targetProxy = 09904FD6249BFC9A00292EC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09904FBD249BFC9700292EC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09904FBE249BFC9700292EC8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09904FC2249BFC9A00292EC8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09904FC3249BFC9A00292EC8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09904FDC249BFC9A00292EC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		09904FDD249BFC9A00292EC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09904FDF249BFC9A00292EC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrafficCar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.TrafficCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09904FE0249BFC9A00292EC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrafficCar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.TrafficCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		09904FE2249BFC9A00292EC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrafficCarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.TrafficCarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrafficCar.app/TrafficCar";
+			};
+			name = Debug;
+		};
+		09904FE3249BFC9A00292EC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrafficCarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.TrafficCarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrafficCar.app/TrafficCar";
+			};
+			name = Release;
+		};
+		09904FE5249BFC9A00292EC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrafficCarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.TrafficCarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrafficCar;
+			};
+			name = Debug;
+		};
+		09904FE6249BFC9A00292EC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrafficCarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.game.TrafficCarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrafficCar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09904FAB249BFC9700292EC8 /* Build configuration list for PBXProject "TrafficCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09904FDC249BFC9A00292EC8 /* Debug */,
+				09904FDD249BFC9A00292EC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09904FDE249BFC9A00292EC8 /* Build configuration list for PBXNativeTarget "TrafficCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09904FDF249BFC9A00292EC8 /* Debug */,
+				09904FE0249BFC9A00292EC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09904FE1249BFC9A00292EC8 /* Build configuration list for PBXNativeTarget "TrafficCarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09904FE2249BFC9A00292EC8 /* Debug */,
+				09904FE3249BFC9A00292EC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09904FE4249BFC9A00292EC8 /* Build configuration list for PBXNativeTarget "TrafficCarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09904FE5249BFC9A00292EC8 /* Debug */,
+				09904FE6249BFC9A00292EC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09904FA8249BFC9700292EC8 /* Project object */;
+}
