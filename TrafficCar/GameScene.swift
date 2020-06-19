@@ -392,7 +392,7 @@ class GameScene: SKScene {
     let backgroundVelocity =
       CGPoint(x: cameraMovePointsPerSec, y: 0)
     //increase speed level two
-    let amountToMove = backgroundVelocity * CGFloat(dt) * 1
+    let amountToMove = backgroundVelocity * CGFloat(dt) * 5
     cameraNode.position += amountToMove
     
     enumerateChildNodes(withName: "background") { node, _ in
