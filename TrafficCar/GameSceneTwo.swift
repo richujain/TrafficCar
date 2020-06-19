@@ -70,7 +70,7 @@ class GameSceneTwo: SKScene {
   
   override func didMove(to view: SKView) {
 
-    playBackgroundMusic(filename: "backgroundMusic.mp3")
+    playBackgroundMusic(filename: "backgroundleveltwo.mp3")
   
     for i in 0...1 {
       let background = backgroundNode()
@@ -396,7 +396,7 @@ class GameSceneTwo: SKScene {
     let backgroundVelocity =
       CGPoint(x: cameraMovePointsPerSec, y: 0)
     //increase speed level two
-    let amountToMove = backgroundVelocity * CGFloat(dt) * 10
+    let amountToMove = backgroundVelocity * CGFloat(dt) * 1
     cameraNode.position += amountToMove
     
     enumerateChildNodes(withName: "background") { node, _ in
