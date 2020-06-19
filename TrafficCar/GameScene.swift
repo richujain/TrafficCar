@@ -392,7 +392,7 @@ class GameScene: SKScene {
     let backgroundVelocity =
       CGPoint(x: cameraMovePointsPerSec, y: 0)
     //increase speed level two
-    let amountToMove = backgroundVelocity * CGFloat(dt) * 5
+    let amountToMove = backgroundVelocity * CGFloat(dt) * 10
     cameraNode.position += amountToMove
     
     enumerateChildNodes(withName: "background") { node, _ in
@@ -456,7 +456,7 @@ class GameScene: SKScene {
         coin.removeAllChildren()
       points = points + 1
      coinsLabel.text = "Coins: \(points)"
-      run(catCollisionSound)
+      //run(catCollisionSound)
     }
     func playerPoliceCarHit(coin: SKSpriteNode) {
       coin.removeAllActions()
@@ -464,7 +464,7 @@ class GameScene: SKScene {
         coin.removeAllChildren()
       points = points - 1
      coinsLabel.text = "Coins: \(points)"
-      run(catCollisionSound)
+      //run(catCollisionSound)
     }
 
 }
