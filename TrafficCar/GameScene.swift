@@ -419,7 +419,7 @@ class GameScene: SKScene {
   //coins
     func spawnCoin() {
       // 1
-      let coin = SKSpriteNode(imageNamed: "coin")
+      let coin = SKSpriteNode(imageNamed: "goldcoin")
       coin.name = "coin"
       coin.position = CGPoint(
         x: CGFloat.random(min: cameraRect.minX,
