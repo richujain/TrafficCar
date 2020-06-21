@@ -16,12 +16,12 @@ fatalError("init(coder:) has not been implemented")
 var background: SKSpriteNode
 if (won) {
 background = SKSpriteNode(imageNamed: "win")
-run(SKAction.playSoundFileNamed("win.wav",
+run(SKAction.playSoundFileNamed("win.mp3",
 waitForCompletion: false))
 } else
 {
     background = SKSpriteNode(imageNamed: "lose")
-run(SKAction.playSoundFileNamed("lose.wav",
+run(SKAction.playSoundFileNamed("lose.mp3",
 waitForCompletion: false))
         }
 background.position =

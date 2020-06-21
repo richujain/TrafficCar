@@ -15,8 +15,7 @@ class GameSceneTwo: SKScene {
   let playerCarAnimation: SKAction
   let catCollisionSound: SKAction = SKAction.playSoundFileNamed(
     "hitCat.wav", waitForCompletion: false)
-  let enemyCollisionSound: SKAction = SKAction.playSoundFileNamed(
-    "hitCatLady.wav", waitForCompletion: false)
+  //let enemyCollisionSound: SKAction = SKAction.playSoundFileNamed("carCrash.mp3", waitForCompletion: false)
   var invincible = false
   let carMovePointsPerSec:CGFloat = 480.0
   var lives = 3
@@ -279,7 +278,7 @@ class GameSceneTwo: SKScene {
   func playerCarHit(car: SKSpriteNode) {
     invincible = true
     let blinkTimes = 5.0
-    let duration = 3.0
+    let duration = 1.0
     let blinkAction = SKAction.customAction(withDuration: duration) { node, elapsedTime in
       let slice = duration / blinkTimes
       let remainder = Double(elapsedTime).truncatingRemainder(
@@ -292,7 +291,7 @@ class GameSceneTwo: SKScene {
     }
     playerCar.run(SKAction.sequence([blinkAction, setHidden]))
     
-    run(enemyCollisionSound)
+    //run(enemyCollisionSound)
     
     lives -= 1
   }
@@ -311,7 +310,7 @@ class GameSceneTwo: SKScene {
         self?.invincible = false
       }
       playerCar.run(SKAction.sequence([blinkAction, setHidden]))
-      run(enemyCollisionSound)
+      //run(enemyCollisionSound)
       points = points - 1
       lives -= 1
       coinsLabel.text = "Coins: \(points)"
@@ -396,7 +395,7 @@ class GameSceneTwo: SKScene {
     let backgroundVelocity =
       CGPoint(x: cameraMovePointsPerSec, y: 0)
     //increase speed level two
-    let amountToMove = backgroundVelocity * CGFloat(dt) * 15
+    let amountToMove = backgroundVelocity * CGFloat(dt) * 5
     cameraNode.position += amountToMove
     
     enumerateChildNodes(withName: "background") { node, _ in

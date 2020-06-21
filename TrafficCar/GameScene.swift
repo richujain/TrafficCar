@@ -13,10 +13,8 @@ class GameScene: SKScene {
   var lastTouchLocation: CGPoint?
   let playerCarRotateRadiansPerSec:CGFloat = 4.0 * π
   let playerCarAnimation: SKAction
-  let catCollisionSound: SKAction = SKAction.playSoundFileNamed(
-    "hitCat.wav", waitForCompletion: false)
-  let enemyCollisionSound: SKAction = SKAction.playSoundFileNamed(
-    "hitCatLady.wav", waitForCompletion: false)
+  //let catCollisionSound: SKAction = SKAction.playSoundFileNamed("hitCat.wav",waitForCompletion: false)
+  //let enemyCollisionSound: SKAction = SKAction.playSoundFileNamed("carCrash.mp3", waitForCompletion: false)
   var invincible = false
   let carMovePointsPerSec:CGFloat = 480.0
   var lives = 3
@@ -275,7 +273,7 @@ class GameScene: SKScene {
   func playerCarHit(car: SKSpriteNode) {
     invincible = true
     let blinkTimes = 5.0
-    let duration = 3.0
+    let duration = 1.0
     let blinkAction = SKAction.customAction(withDuration: duration) { node, elapsedTime in
       let slice = duration / blinkTimes
       let remainder = Double(elapsedTime).truncatingRemainder(
@@ -288,7 +286,7 @@ class GameScene: SKScene {
     }
     playerCar.run(SKAction.sequence([blinkAction, setHidden]))
     
-    run(enemyCollisionSound)
+    //run(enemyCollisionSound)
     
     lives -= 1
   }
@@ -307,7 +305,7 @@ class GameScene: SKScene {
         self?.invincible = false
       }
       playerCar.run(SKAction.sequence([blinkAction, setHidden]))
-      run(enemyCollisionSound)
+      //run(enemyCollisionSound)
       points = points - 1
       lives -= 1
       coinsLabel.text = "Coins: \(points)"
@@ -369,13 +367,13 @@ class GameScene: SKScene {
     backgroundNode.name = "background"
 
     // 2
-    let background1 = SKSpriteNode(imageNamed: "background3")
+    let background1 = SKSpriteNode(imageNamed: "background2")
     background1.anchorPoint = CGPoint.zero
     background1.position = CGPoint(x: 0, y: 0)
     backgroundNode.addChild(background1)
     
     // 3
-    let background2 = SKSpriteNode(imageNamed: "background3")
+    let background2 = SKSpriteNode(imageNamed: "background2")
     background2.anchorPoint = CGPoint.zero
     background2.position =
       CGPoint(x: background1.size.width, y: 0)
@@ -392,7 +390,7 @@ class GameScene: SKScene {
     let backgroundVelocity =
       CGPoint(x: cameraMovePointsPerSec, y: 0)
     //increase speed level two
-    let amountToMove = backgroundVelocity * CGFloat(dt) * 10
+    let amountToMove = backgroundVelocity * CGFloat(dt) * 5
     cameraNode.position += amountToMove
     
     enumerateChildNodes(withName: "background") { node, _ in
